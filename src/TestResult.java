@@ -1,12 +1,11 @@
-//package test;
-
-//import domain.Exercise;
-
 public class TestResult {
 
     public static void main(String[] args) {
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        int start = 20;
+        int end = 44;
+
+        String primesList = Exercise.Calculate(start, end);
+        System.out.println("Прості числа між " + start + " та " + end + ": " + primesList);
     }
 }
